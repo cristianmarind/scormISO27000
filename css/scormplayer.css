@@ -17,7 +17,7 @@ body {
     position: relative;
 
     /*new*/
-    min-width: 400px;
+    min-width: 250px;/*No se modifica mas el contenido*/
 }
 /*Contenedor de contenido*/
 #content {
@@ -60,6 +60,7 @@ h2{
 }
 
 @media screen and (max-width: 512px){
+
     #content{
         padding: 0px 5% 0px 5%;
     }

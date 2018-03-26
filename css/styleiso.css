@@ -1,0 +1,35 @@
+.divHeader{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.divHeaderTitle{
+    width: 40%;
+    float: left;
+    padding: 0px 0px 0px 5%;
+    font-weight: bold;
+    color: #3778cc;
+    margin-right: 2px;
+    border-radius: 30px 0px 0px 30px;
+
+    background-color: rgb(188, 189, 199);
+}
+
+.divHeaderStages{
+    width: 60%;
+    float: left;
+}
+
+.divHeaderStages label{
+    width: 30%;
+    float: left;
+    text-align: center;
+    border: solid;
+    border-width: 1px;
+    background-color: #3778cc;
+    border-radius: 0px 30px 30px 0px;
+    color: rgb(188, 189, 199);
+}
