@@ -1,35 +1,61 @@
-.divHeader{
-    width: 100%;
-    display: flex;
-    padding: 10px;
-    font-size: 20px;
-    font-style: oblique;
+/*Estilo General del SCORM*/
+body{
+    background-color: #fff;
 }
-
-.divHeaderTitle{
-    width: 40%;
-    float: left;
-    padding: 0px 0px 0px 5%;
-    font-weight: bold;
-    color: #3778cc;
-    margin-right: 2px;
-    border-radius: 30px 0px 0px 30px;
-
-    background-color: rgb(188, 189, 199);
+main{
+    border: 0px !important;
+    border-radius: 0px !important;
 }
-
-.divHeaderStages{
-    width: 60%;
-    float: left;
+/*subpage*/
+.divSubpage{
+    background-color: rgb(247, 247, 247);
+    padding: 3%;
+    margin-top: 10px;
 }
-
-.divHeaderStages label{
-    width: 30%;
-    float: left;
+/*Estilo imagenes*/
+.divImg{
     text-align: center;
-    border: solid;
-    border-width: 1px;
-    background-color: #3778cc;
-    border-radius: 0px 30px 30px 0px;
-    color: rgb(188, 189, 199);
+}
+.divImg img{
+    max-width: 300px;
+}
+.divImg, .divImg img{
+    width: 100%;
+    height: auto;
+}
+
+/*Pagina de presentación*/
+
+
+
+
+/*Configuraciones responsivas*/
+body{
+    min-width: 300px;
+}
+
+@media screen and (max-width: 512px){
+    /*Columnas*/
+    .row{
+        display: block !important;
+    }
+
+    .row > .col-2{
+        width: 95% !important;
+    }
+
+    /*Img*/
+    .divImg img{
+        width: 60%;
+        height: auto;
+    }
+}
+@media screen and (min-width: 513px){
+    .row{
+        display: flex !important;
+    }
+
+    .row > .col-2{
+        width: 50% !important;
+    }
 }

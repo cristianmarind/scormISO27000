@@ -216,8 +216,8 @@
     height: auto;
 }
 
-.jpit_activities_quiz_question_answers { height: 150px; overflow: auto; }
-.jpit_activities_quiz_board { height: 220px; }
+.jpit_activities_quiz_question_answers { /*height: 150px;*/ overflow: auto; }/*Modificado ISO27000*/
+/*.jpit_activities_quiz_board { height: 220px; }*/ /*Modificado ISO27000*/
 
 /********************************************************************************/
 /* Actividad Sopa de letras
