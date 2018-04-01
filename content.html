@@ -91,7 +91,12 @@
                 <menu>
                     <menuitem label="Presentación" data-page="pag-inicio"></menuitem>
                     <menuitem label="ISO27000" data-page="pag-iso27000"></menuitem>
-                    <menuitem label="ISO27001" data-page="pag-iso27001"></menuitem>
+                    <menuitem label="ISO27001">
+                        <menu>
+                            <menuitem label="4. Contexto de la organización" data-page="pag-iso27001-4"></menuitem>
+                            <menuitem label="5. Liderazgo" data-page="pag-iso27001-5"></menuitem>
+                        </menu>
+                    </menuitem>
                     <menuitem label="ISO27002" data-page="pag-iso27002"></menuitem>
                     <menuitem label="ISO27003" data-page="pag-iso27003"></menuitem>
                 </menu>
@@ -205,12 +210,10 @@
                     </div>
                 </div>
             </section>
-
             <!--Page iso27000-->
             <section id="pag-iso27000" ptitle="ISO 27000">
                 <div class="subpage">
                     <div class="divSubpage">
-                        <h3>Conjunto de preguntas A</h3>
                         <div class="instruction" type="info">
                             ¡Pasa el mouse por encima de las imagenes o dale click para ver las pistas!
                         </div>
@@ -298,7 +301,6 @@
                 </div>
                 <div class="subpage">
                     <div class="divSubpage">
-                        <h3>Conjunto de preguntas A</h3>
                         <p>¿El estandar ISO27000 lo puede aplicar empresas de que tipo?</p>
                         <div class="instruction" type="info">
                             Arrastra los botones que están en el lado inferior a las casillas.
@@ -327,22 +329,386 @@
                     </div>
                 </div>
             </section>
-            <!--Page iso27001-->
-            <section id="pag-iso27001" ptitle="ISO 27001">
+            <!--Page iso27001-4-->
+            <section id="pag-iso27001-4" ptitle="ISO 27001 - 4. Contexto de la organización">
                 <div class="subpage">
-                    
+                    <div class="divSubpage">
+                        <p>Agrupar las cuestiones que pueden afectar el SGSI en internas o externas a la organización</p>
+                        <div class="instruction" type="info">
+                            Arrastra los botones que están en el lado inferior a las casillas.
+                        </div>
+                        <div id="arrastrargrupos" class="jpit-activities-multidroppable" data-act-title="Arrastrar y soltar múltiple" data-act-id="act_mdrag">
+                            <table class="box_targets">
+                                <tbody>
+                                    <tr>
+                                        <td><h5>Internas</h5><div data-target-group="1" class="target"></div></td>
+                                        <td><h5>Externas</h5><div data-target-group="2" class="target"></div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="buttons">
+                                <button class="general verify">Verificar</button>
+                                <button class="general continue" style="display: none;">Continuar intentando</button>
+                            </div>
+                            <div class="box_end"></div>
+                            <div class="sources">
+                                <div data-group="2">Ambiente social</div>
+                                <div data-group="2">Ambiente cultural</div>
+                                <div data-group="1">Cultura organizacional</div>
+                                <div data-group="2">Competencia</div>
+                                <div data-group="1">Normas  organizacionales</div>
+                                <div data-group="1">Politicas organizacionales</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subpage">
+                    <div class="divSubpage">
+                        <div class="jpit-activities-check">
+                            <words>
+                                <li data-val="true">Clientes</li>
+                                <li data-val="true">Accionistas</li>
+                                <li data-val="true">Proveedores</li>
+                                <li data-val="true">Personal</li>
+                                <li data-val="true">Competidores</li>
+                                <li data-val="true">Sociedad</li>
+                            </words>
+                            <div class="board">
+                                <div class="check_left">
+                                    <div class="play">
+                                        <p>Indique si el siguiente ente es un interesado del SGSI:</p>
+                                        <div class="word_content"> </div>
+                                        <div class="buttons">
+                                            <button class="yes general">Si</button>
+                                            <button class="not general">No</button>
+                                        </div>
+                                    </div>
+                                    <div class="box_conclution">
+                                        <h3>¡Ha finalizado!</h3>
+                                        <p>Al clasificar ha tenido los siguientes aciertos y desaciertos:</p>
+                                        <p>
+                                            <strong>Aciertos:</strong>
+                                            <span class="correct_words"></span>
+                                        </p>
+                                        <p>
+                                            <strong>Desaciertos:</strong>
+                                            <span class="wrong_words"></span>
+                                        </p>
+                                        <div class="buttons">
+                                            <button class="general reload">Vovler a clasificar los interesados incorrectamente clasificadas</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="check_right">
+                                    <div class="box_result">
+                                        <div class="correct">
+                                            <div class="hits">0</div>
+                                            <div class="text">Aciertos</div>
+                                        </div>
+                                        <div class="wrong">
+                                            <div class="miss">0</div>
+                                            <div class="text">Desaciertos</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Page iso27002-5-->
+            <section id="pag-iso27001-5" ptitle="ISO 27001 - 4. Contexto de la organización">
+                <div class="subpage">
+                    <div class="divSubpage">
+
+                    </div>
                 </div>
             </section>
             <!--Page iso27002-->
             <section id="pag-iso27002" ptitle="ISO 27002">
                 <div class="subpage">
-                        
+                    <div class="divSubpage">
+                        <div class="jpit-activities-quiz" data-act-title="El cuestionario" data-act-id="1_cuestionario">
+                            <question type="complete">
+                                <description>
+                                    <p>ISO 27002</p>
+                                </description>
+                                <p class="item">
+                                    La ISO 27002 contiene una guía conformada por
+                                    <select class="answers">
+                                        <option data-response="true">14</option>
+                                        <option>27</option>
+                                    </select> Numerales de control de seguridad de la información que conjunto contiene más de
+                                    <select class="answers">
+                                        <option>10 categorias</option>
+                                        <option data-response="true">35 categorías</option>
+                                    </select> de seguridad principales y 
+                                    <select class="answers">
+                                        <option>27 controles</option>
+                                        <option data-response="true">114 controles</option>
+                                    </select>.
+                                </p>
+                            </question>
+                        </div>
+                    </div>
+                </div>
+                <div class="subpage">
+                    <div class="divSubpage">
+                        <p>Agrupe los 14 numerales de control de seguridad de la información en la casilla <b>"Pertenece"</b>.</p>
+                        <div class="instruction" type="info">
+                            Arrastra los botones que están en el lado inferior a las casillas.
+                        </div>
+                        <div id="arrastrargrupos" class="jpit-activities-multidroppable" data-act-title="Arrastrar y soltar múltiple" data-act-id="act_mdrag">
+                            <table class="box_targets">
+                                <tbody>
+                                    <tr>
+                                        <td><h5>Pertenece</h5><div data-target-group="1" class="target"></div></td>
+                                        <td><h5>No pertenece</h5><div data-target-group="2" class="target"></div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="buttons">
+                                <button class="general verify">Verificar</button>
+                                <button class="general continue" style="display: none;">Continuar intentando</button>
+                            </div>
+                            <div class="box_end"></div>
+                            <div class="sources">
+                                <div data-group="1">Políticas de la seguridad de la información </div>
+                                <div data-group="1">Organización de la seguridad de la información</div>
+                                <div data-group="1">Seguridad del recurso humano</div>
+                                <div data-group="1">Gestión de activos</div>
+                                <div data-group="2">Seguridad en el manejo de información de terceros</div>
+                                <div data-group="2">Registro(Looging ) y seguimiento.</div>
+                                <div data-group="2">Control de acceso</div>
+                                <div data-group="1">Control de acceso</div>
+                                <div data-group="1">Criptografía</div>
+                                <div data-group="1">Seguridad física y del entorno</div>
+                                <div data-group="1">Seguridad de las operaciones</div>
+                                <div data-group="1">Seguridad de las comunicaciones</div>
+                                <div data-group="2">integridad de la información </div>
+                                <div data-group="1">Adquisición, desarrollo y mantenimiento de sistemas.</div>
+                                <div data-group="1">Relaciones con los proveedores</div>
+                                <div data-group="2">gestión de seguridad en las redes </div>
+                                <div data-group="1">Gestión de incidentes de seguridad de la información</div>
+                                <div data-group="1">Aspectos de seguridad de la información de la gestión de continuidad de negocio</div>
+                                <div data-group="1">Cumplimiento</div>
+                                <div data-group="2">Copias de respaldo</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subpage">
+                    <div class="divSubpage">
+                        <div class="instruction" type="info">
+                                Seleccione el concepto a la derecha y luego búsque la palabra que le corresponde en la sopa de letras.
+                        </div>
+                        <div class="jpit-activities-wordpuzzle" data-act-id="2_sopadeletras" >
+                            <letters>
+                                <row>G,U,I,A,D,E,I,M,P,L,E,M,E,N,T,A,C,I,O,N,I,B,D</row>
+                                <row>O,N,C,O,L,O,M,B,L,A,N,I,B,M,W,O,N,I,E,B,H,I,S</row>
+                                <row>M,W,O,N,I,E,B,I,R,X,A,V,U,U,N,I,L,I,L,K,U,J,K</row>
+                                <row>M,U,N,U,N,C,N,Ñ,I,A,M,A,N,C,O,L,O,M,B,L,A,N,I</row>
+                                <row>O,R,T,I,N,F,O,R,M,A,C,I,O,N,A,D,I,C,I,O,N,A,L</row>
+                                <row>N,E,R,U,X,U,N,I,L,I,L,K,U,P,L,N,E,P,O,G,R,A,E</row>
+                                <row>S,A,O,X,A,P,E,F,E,H,G,P,L,U,N,I,L,I,L,K,U,J,J</row>
+                                <row>O,P,L,N,E,P,O,G,R,A,E,L,G,U,N,I,L,I,L,K,U,Z,I</row>
+                            </letters>
+                            <div class="words">
+                                <h5>Busca y aprende</h5>
+                                <ul>
+                                    <li data-term="guiadeimplementacion">Brinda información más detallada para apoyar la instauración del control y cumplir el objetivo de control</li>
+                                    <li data-term="informacionadicional">Brinda información a considerar como: las consideraciones legales y referencias a otras normas de interés</li>
+                                    <li data-term="control">Define la declaración específica del control para satisfacer el objetivo de control</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <!--Page iso27003-->
             <section id="pag-iso27003" ptitle="ISO 27003">
                 <div class="subpage">
-                    
+                    <div class="divSubpage">
+                        <div class="jpit-activities-quiz" data-act-title="El cuestionario" data-act-id="1_cuestionario" data-shuffle="false">
+                            <question type="simplechoice">
+                                <description><p>¿Cuál fue el año de ratificación de la iso27003?</p></description>
+                                <ul>
+                                    <li data-response="true">2012</li>
+                                    <li>1927</li>
+                                    <li>2018</li>
+                                    <li>2000</li>
+                                </ul>
+                                <feedback>
+                                    <correct>¡Correcto!</correct>
+                                </feedback>
+                            </question>
+                        </div>
+                    </div>
+                </div>
+                <div class="subpage">
+                    <div class="divSubpage">
+                        <div class="instruction" type="info">
+                            Seleccione la pista a la derecha y luego búsque la palabra que le corresponde en la sopa de letras.
+                        </div>
+                        <div class="jpit-activities-wordpuzzle" data-act-id="2_sopadeletras" >
+                            <letters>
+                                <row>G,U,R,M,A,L,C,A,N,C,E,I,C,I,O,A,C,I,O,N,I,R,D</row>
+                                <row>O,N,C,O,P,I,M,B,L,A,N,I,B,M,W,O,N,I,E,B,H,E,S</row>
+                                <row>M,W,O,N,R,M,B,I,R,X,A,V,U,U,N,I,L,I,L,K,U,Q,K</row>
+                                <row>A,U,N,U,O,I,N,R,E,Q,U,E,R,I,M,I,E,N,T,O,S,L,O</row>
+                                <row>N,R,T,I,B,T,O,R,M,A,C,I,O,N,A,D,I,C,I,O,N,T,L</row>
+                                <row>E,E,R,U,A,E,N,I,L,I,L,K,U,P,L,N,E,P,O,G,R,T,E</row>
+                                <row>X,A,O,X,C,S,E,F,E,P,O,L,I,T,I,C,A,S,L,K,U,I,J</row>
+                                <row>O,P,L,N,I,P,O,G,R,A,E,L,G,U,N,I,L,I,L,K,U,M,I</row>
+                                <row>A,R,T,I,O,F,O,R,M,A,C,I,D,I,S,E,Ñ,O,I,O,N,I,L</row>
+                                <row>N,E,R,U,N,U,N,I,L,I,L,K,U,P,L,N,E,P,O,G,R,E,E</row>
+                                <row>S,G,S,I,C,P,E,F,E,H,R,I,E,S,G,O,S,P,H,S,A,N,S</row>
+                            </letters>
+                            <div class="words">
+                                <h5>Encuentre términos relacionados con las  las fases de la iso 27003</h5>
+                                <ul>
+                                    <li data-term="aprobacion">Fase 1 de la iso 27003</li>
+                                    <li data-term="alcance">Fase 2 de la iso 27003</li>
+                                    <li data-term="limites">Fase 2 de la iso 27003</li>
+                                    <li data-term="politicas">Fase 2 de la iso 27003</li>
+                                    <li data-term="requerimientos">Fase3 de la iso 27003</li>
+                                    <li data-term="riesgos">Fase4 de la iso 27003</li>
+                                    <li data-term="diseño">Última Fase de la iso 27003</li>
+                                    <li data-term="anexoa">Documentación fase inicial</li>
+                                    <li data-term="sgsi">Sistema de Gestión de la seguridad de la información</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="subpage">
+                    <div class="divSubpage">
+                        <div id="arrastrar" class="jpit-activities-droppable" data-verify-type="target" data-act-id="arrastrar1">
+                            <p>Relacione a continuación las fases sugeridas de la Iso 27003.</p>
+                            <table>
+                                <tr>
+                                    <th>Fase 1</th>
+                                    <td class="conection"><span class="icon_horizontal_arrow"></span></td>
+                                    <td data-target-group="1"></td>
+                                </tr>
+                                <tr>
+                                    <th>Fase 2</th>
+                                    <td class="conection"><span class="icon_horizontal_arrow"></span></td>
+                                    <td data-target-group="2"></td>
+                                </tr>
+                                <tr>
+                                    <th>Fase 3</th>
+                                    <td class="conection"><span class="icon_horizontal_arrow"></span></td>
+                                    <td data-target-group="3"></td>
+                                </tr>
+                                <tr>
+                                    <th>Fase 4</th>
+                                    <td class="conection"><span class="icon_horizontal_arrow"></span></td>
+                                    <td data-target-group="4"></td>
+                                </tr>
+                                <tr>
+                                    <th>Fase 5</th>
+                                    <td class="conection"><span class="icon_horizontal_arrow"></span></td>
+                                    <td data-target-group="4"></td>
+                                </tr>
+                            </table>
+                        
+                            <h4>Frases:</h4>
+                            <div>
+                                <div data-group="2" class="item_1">Definicion de alcances limites y politicas</div>
+                                <div data-group="4" class="item_2">Evaluacion del riesgo</div>
+                                <div data-group="5" class="item_3">Diseno del SGSI</div>
+                                <div data-group="3" class="item_4">Analisis de requisitos</div>
+                                <div data-group="1" class="item_5">Obtencion de la aprobacion de la direccion</div>
+                                <div data-group="6" class="item_6">Análisis de requisitos TIC</div>
+                                <div data-group="6" class="item_7">Definir objetivos del negocio</div>
+                                <div data-group="6" class="item_8">Caso del Negocio</div>
+                            </div>
+                            <br class="clear" />
+                        
+                            <div class="box_end"></div>
+                        </div>
+                    </div>
+                </div>-->
+                <div class="subpage">
+                    <div class="divSubpage">
+                        <div class="jpit-activities-quiz" data-act-title="El cuestionario" data-act-id="1_cuestionario">
+                            <question type="complete">
+                                <description>
+                                    <p>¡Completa la oración!</p>
+                                </description>
+                                <p class="item">
+                                    En la
+                                    <select class="answers">
+                                        <option data-response="true">ISO 27003</option>
+                                        <option>ISO 27001</option>
+                                    </select>  se describe el proceso para la
+                                    <select class="answers">
+                                        <option>negociación</option>
+                                        <option>recuperación</option>
+                                        <option data-response="true">obtención</option>
+                                    </select> de la aprobación de la 
+                                    <select class="answers">
+                                        <option>delegación</option>
+                                        <option>organización</option>
+                                        <option data-response="true">dirección</option>
+                                    </select> para implementar un SGSI.
+                                </p>
+                            </question>
+                        </div>
+                    </div>
+                </div>
+                <div class="subpage">
+                    <div class="divSubpage">
+                        <div class="jpit-activities-check">
+                            <words>
+                                <li data-val="true">Roles</li>
+                                <li data-val="true">Responsabilidades</li>
+                                <li>Objetivos</li>
+                                <li>procesos</li>
+                                <li>requisitos</li>
+                            </words>
+                            <div class="board">
+                                <div class="check_left">
+                                    <div class="play">
+                                        <p> En el anexo B se habla de:</p>
+                                        <div class="word_content"> </div>
+                                        <div class="buttons">
+                                            <button class="yes general">Si</button>
+                                            <button class="not general">No</button>
+                                        </div>
+                                    </div>
+                                    <div class="box_conclution">
+                                        <h3>¡Ha finalizado!</h3>
+                                        <p>Al clasificar ha tenido los siguientes aciertos y desaciertos:</p>
+                                        <p>
+                                            <strong>Aciertos:</strong>
+                                            <span class="correct_words"></span>
+                                        </p>
+                                        <p>
+                                            <strong>Desaciertos:</strong>
+                                            <span class="wrong_words"></span>
+                                        </p>
+                                        <div class="buttons">
+                                            <button class="general reload">Vovler a clasificar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="check_right">
+                                    <div class="box_result">
+                                        <div class="correct">
+                                            <div class="hits">0</div>
+                                            <div class="text">Aciertos</div>
+                                        </div>
+                                        <div class="wrong">
+                                            <div class="miss">0</div>
+                                            <div class="text">Desaciertos</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
