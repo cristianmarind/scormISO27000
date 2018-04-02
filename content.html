@@ -95,6 +95,7 @@
                         <menu>
                             <menuitem label="4. Contexto de la organización" data-page="pag-iso27001-4"></menuitem>
                             <menuitem label="5. Liderazgo" data-page="pag-iso27001-5"></menuitem>
+                            <menuitem label="6. Planificación" data-page="pag-iso27001-6"></menuitem>
                         </menu>
                     </menuitem>
                     <menuitem label="ISO27002" data-page="pag-iso27002"></menuitem>
@@ -417,10 +418,57 @@
                 </div>
             </section>
             <!--Page iso27002-5-->
-            <section id="pag-iso27001-5" ptitle="ISO 27001 - 4. Contexto de la organización">
+            <section id="pag-iso27001-5" ptitle="ISO 27001 - 5. Liderzgo">
                 <div class="subpage">
                     <div class="divSubpage">
-
+                        <div id="arrastrar2" class="jpit-activities-droppable" data-verify-type="target" data-act-id="arrastrar2"><!--Toco poner el id=arrastar2 pues no funciona de lo contrario-->
+                            <div>
+                                <p>Arrastre una palabra de la derecha para completar una de las sentencias de la izquierda.</p>
+                            </div>
+                            <div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>La alta dirección debe demostrar compromiso y <button data-target-group="1"> </button>con el SGSI.</p>
+                                                <p>Se debe asegurar el establecimiento de <button data-target-group="2"> </button> de SI.</p>
+                                                <p>La política debe incluir objetivos de seguridad</p>
+                                                <p>Se debe integrar el <button data-target-group="3"> </button> en los procesos de negocio.</p>
+                                            </td>
+                                            <td class="sources">
+                                                <div data-group="3">SGSI</div>
+                                                <div data-group="2">políticas</div>
+                                                <div data-group="1">liderazgo</div>
+                                                <div data-group="4">lealtad</div>
+                                                <div data-group="4">acciones</div>
+                                                <div data-group="4">personal</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="box_end"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Page iso27002-6-->
+            <section id="pag-iso27001-6" ptitle="ISO 27001 - 6. Planificación">
+                <div class="subpage">
+                    <div class="divSubpage">
+                        <div class="instruction" type="info">
+                            Puede seleccionar más de una respuesta.
+                        </div>
+                        <div class="jpit-activities-quiz" data-act-title="Cuestionario Planificacion" data-shuffle="false">
+                            <question type="multichoice">
+                                <description><p>A los riesgos y oportunidades de la SI la organización debe:</p></description>
+                                <ul>
+                                    <li data-response="true">Determinarlos</li>
+                                    <li data-response="true">Definir y aplicar un proceso de tratamiento</li>
+                                    <li data-response="true">Establecer los objetivos de la SI en las funciones y niveles pertinentes</li>
+                                </ul>
+                            </question>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -581,9 +629,9 @@
                         </div>
                     </div>
                 </div>
-                <!--<div class="subpage">
+                <div class="subpage" id="pag-actividades-arrastrar1"><!--Toco poner ese ID para que funcionara@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
                     <div class="divSubpage">
-                        <div id="arrastrar" class="jpit-activities-droppable" data-verify-type="target" data-act-id="arrastrar1">
+                        <div id="arrastrar1" class="jpit-activities-droppable" data-verify-type="target" data-act-id="arrastrar1">
                             <p>Relacione a continuación las fases sugeridas de la Iso 27003.</p>
                             <table>
                                 <tr>
@@ -609,27 +657,27 @@
                                 <tr>
                                     <th>Fase 5</th>
                                     <td class="conection"><span class="icon_horizontal_arrow"></span></td>
-                                    <td data-target-group="4"></td>
+                                    <td data-target-group="5"></td>
                                 </tr>
                             </table>
-                        
-                            <h4>Frases:</h4>
+
+                            <h4>Capitales:</h4>
                             <div>
-                                <div data-group="2" class="item_1">Definicion de alcances limites y politicas</div>
-                                <div data-group="4" class="item_2">Evaluacion del riesgo</div>
-                                <div data-group="5" class="item_3">Diseno del SGSI</div>
-                                <div data-group="3" class="item_4">Analisis de requisitos</div>
-                                <div data-group="1" class="item_5">Obtencion de la aprobacion de la direccion</div>
-                                <div data-group="6" class="item_6">Análisis de requisitos TIC</div>
-                                <div data-group="6" class="item_7">Definir objetivos del negocio</div>
-                                <div data-group="6" class="item_8">Caso del Negocio</div>
+                                <div data-group="2" class="item">Definicion de alcances limites y politicas</div>
+                                <div data-group="4" class="item" >Evaluacion del riesgo</div>
+                                <div data-group="5" class="item" >Diseno del SGSI</div>
+                                <div data-group="3" class="item" >Analisis de requisitos </div>
+                                <div data-group="1" class="item" >Obtencion de la aprobacion de la direccion</div>
+                                <div data-group="6" class="item" >Análisis de requisitos TIC</div>
+                                <div data-group="6" class="item" >Definir objetivos del negocio</div>
+                                <div data-group="6" class="item" >Caso del Negocio</div>
                             </div>
                             <br class="clear" />
-                        
+
                             <div class="box_end"></div>
                         </div>
                     </div>
-                </div>-->
+                </div>
                 <div class="subpage">
                     <div class="divSubpage">
                         <div class="jpit-activities-quiz" data-act-title="El cuestionario" data-act-id="1_cuestionario">
