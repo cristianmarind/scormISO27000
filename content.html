@@ -99,7 +99,13 @@
                             <menuitem label="7. Soporte" data-page="pag-iso27001-7"></menuitem>
                         </menu>
                     </menuitem>
-                    <menuitem label="ISO27002" data-page="pag-iso27002"></menuitem>
+                    <menuitem label="ISO27002">
+                        <menu>
+                            <menuitem label="General" data-page="pag-iso27002-0"></menuitem>
+                            <menuitem label="Acceso" data-page="iso27002-1-acceso"></menuitem>
+                            <menuitem label="Demas Numerales" data-page="iso27002-2-demas"></menuitem>
+                        </menu>
+                    </menuitem>
                     <menuitem label="ISO27003" data-page="pag-iso27003"></menuitem>
                 </menu>
             </nav>
@@ -496,8 +502,8 @@
                     </div>
                 </div>
             </section>
-            <!--Page iso27002-->
-            <section id="pag-iso27002" ptitle="ISO 27002">
+            <!--Page iso27002-0-->
+            <section id="pag-iso27002-0" ptitle="ISO 27002">
                 <div class="subpage">
                     <div class="divSubpage">
                         <div class="jpit-activities-quiz" data-act-title="El cuestionario" data-act-id="1_cuestionario">
@@ -817,6 +823,147 @@
                         </div>
                     </div>
                 </div>
+            </section>
+            <!--Page iso27002-1-acceso-->
+            <section id="iso27002-1-acceso" ptitle="Sección de acceso">
+                <div class="subpage">
+                    <div class="divSubpage">
+                        <div class="jpit-activities-check">
+                            <words>  
+                                <li data-val="true">Sean fáciles de recordar</li>
+                                <li data-val="true">Si son temporales, cambiarlas la primera vez que se ingrese</li>
+                                <li>Que se base en algo muy conocido de la persona</li>
+                                <li>Que contenga solo un caracteres numéricos o alfabéticos</li>
+                            </words>
+                            <div class="board">
+                                <div class="check_left">
+                                    <div class="play">
+                                        <p>Indique cuál de las siguientes hacen parte de características de una contraseña segura:</p>
+                                        <div class="word_content"> </div>
+                                        <div class="buttons">
+                                            <button class="yes general">Si</button>
+                                            <button class="not general">No</button>
+                                        </div>
+                                    </div>
+                                    <div class="box_conclution">
+                                        <h3>¡Ha finalizado!</h3>
+                                        <p>Al clasificar ha tenido los siguientes aciertos y desaciertos:</p>
+                                        <p>
+                                            <strong>Aciertos:</strong>
+                                            <span class="correct_words"></span>
+                                        </p>
+                                        <p>
+                                            <strong>Desaciertos:</strong>
+                                            <span class="wrong_words"></span>
+                                        </p>
+                                        <div class="buttons">
+                                            <button class="general reload">Vovler a clasificar lo incorrectamente clasificado</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="check_right">
+                                    <div class="box_result">
+                                        <div class="correct">
+                                            <div class="hits">0</div>
+                                            <div class="text">Aciertos</div>
+                                        </div>
+                                        <div class="wrong">
+                                            <div class="miss">0</div>
+                                            <div class="text">Desaciertos</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--pAGE ISO27002-2-demas-->
+            <section id="iso27002-2-demas" ptitle="Demas secciones">
+                <div class="subpage">
+                    <div class="divSubpage">
+                        <p>Arrastre el control correspondiente al numeral </p>
+                        <div id="arrastrargrupos" class="jpit-activities-multidroppable" data-act-title="Arrastrar y soltar múltiple" data-act-id="act_mdrag">
+                            <table class="box_targets">
+                                <tbody>
+                                    <tr>
+                                        <td><h5>Seguridad de las comunicaciones</h5><div data-target-group="1" class="target"></div></td>
+                                        <td><h5>Seguridad de operaciones</h5><div data-target-group="2" class="target"></div></td>
+                                        <td><h5>Gestión de activos</h5><div data-target-group="3" class="target"></div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="buttons">
+                                <button class="general verify">Verificar</button>
+                                <button class="general continue" style="display: none;">Continuar intentando</button>
+                            </div>
+                            <div class="box_end"></div>
+                            <div class="sources">
+                                <div data-group="1">Acuerdos de confidencialidad o de no divulgación</div>
+                                <div data-group="1">Controles de redes</div>
+                                <div data-group="3">Transferencia  de medios físicos</div>
+                                <div data-group="2">Respaldo de la información</div>
+                                <div data-group="1">Acuerdos sobre transferencia de información</div>
+                                <div data-group="2">Gestión de cambios</div>
+                                <div data-group="1">Mensajería electrónica</div>
+                                <div data-group="2">Instalación de software en sistemas operativos</div>
+                                <div data-group="3">Etiquetado de  la información</div>
+                                <div data-group="3">Gestión de medios removibles</div>
+                                <div data-group="2">Gestión de activos</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="subpage">
+                    <div class="divSubpage">
+                        <div id="arrastrar2" class="jpit-activities-droppable" data-verify-type="target" data-act-id="arrastrar2">
+                            <div>
+                                <p>Arrastre una palabra de la derecha para completar una de las sentencias de la izquierda.</p>
+                            </div>
+                            <div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    El <button data-target-group="1"> </button>es un control que nos permite 
+                                                    asegurar que los empleados y contratistas tomen conciencia de sus responsabilidades 
+                                                    de seguridad de la información y las cumplan</p>
+                                                <p>
+                                                    La <button data-target-group="2"> </button> y <button data-target-group="3"> </button> 
+                                                    son controles que nos permite asegurar que los empleados y contratistas comprendan sus responsabilidades
+                                                     y son idóneos en los roles para los que se consideran.</p>
+                                                <p>
+                                                    Evitar el acceso no autorizado a sistemas y aplicaciones se podría evitar mediante
+                                                     <button data-target-group="4"> </button> y uso de un <button data-target-group="5"> </button>
+                                                    </p>
+                                                <p>
+                                                    El uso de información secreta para la autenticación es una medida de control perteneciente a las
+                                                    <button data-target-group="6"> </button> ya!
+                                                </p>
+                                                <p>
+                                                    Cuando están desatendidos, computadores y terminales se debería dejar fuera del sistema
+                                                    o proteger con un sistema de bloqueo es un tema a considerar en la definición de
+                                                    <button data-target-group="7"> </button>
+                                                </p>
+                                            </td>
+                                            <td class="sources">
+                                                <div data-group="7">Políticas de escritorio limpio y pantalla limpia</div>
+                                                <div data-group="6">responsabilidades de los usuarios</div>
+                                                <div data-group="2">Selección</div>
+                                                <div data-group="3">Términos y condiciones del empleo</div>
+                                                <div data-group="4">Procedimiento de  ingreso seguro</div>
+                                                <div data-group="5">sistema de gestión de contraseñas</div>
+                                                <div data-group="1">Proceso disciplinario</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="box_end"></div>
+                        </div>
+                    </div>
+                </div>-->
             </section>
             <!--Page iso27003-->
             <section id="pag-iso27003" ptitle="ISO 27003">
